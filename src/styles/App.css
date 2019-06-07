@@ -1,0 +1,87 @@
+.App {
+    font-family: 'Arimo', sans-serif;
+    padding: 0 10rem 3rem;
+}
+
+.content {
+    text-align: left;
+}
+
+.App-logo {
+    left: -5em;
+    pointer-events: none;
+    position: relative;
+}
+
+.App-header {
+    color: #5a5a5a;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(10px + 2vmin);
+    padding: 0 15px;
+}
+
+.App-header h1 {
+    position: relative;
+}
+
+.App-header h1:after {
+    content: "";
+    position: absolute;
+    width: 21%;
+    height: 3px;
+    bottom: -.3rem;
+    left: 0;
+    border-bottom: 3px solid #a3c642;
+}
+
+.App-header p {
+    margin-top: 1rem;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.bd .row+.row {
+    margin-top: 1rem;
+}
+
+.LinkBox {
+    background: white;
+    border: 2px solid #435165;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.LinkBox h2 {
+    background: #435165;
+    color: white;
+    font-size: 1.75rem;
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.LinkBox .sub-title {
+    border-bottom: 2px solid #a3c642;
+    color: #363636;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.LinkBox h3 {
+    font-size: 1.5rem;
+}
+
+.LinkBox p {
+    margin-bottom: .25rem;
+}
+
+.LinkBox .col-md-12 {
+    padding-bottom: 2rem;
+}
