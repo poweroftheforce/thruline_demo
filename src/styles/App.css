@@ -1,6 +1,7 @@
 .App {
     font-family: 'Arimo', sans-serif;
     padding: 0 5rem 3rem;
+    width: 100%;
 }
 
 .content {
@@ -9,8 +10,7 @@
 
 .App-logo {
     display: inline-block;
-    position: relative;
-    top: -50px;
+    margin-top: 0;
 }
 
 .App-header {
@@ -103,6 +103,66 @@
     margin-bottom: .25rem;
 }
 
+.LinkBox a, .LinkBox a:hover {
+    text-decoration: underline;
+}
+
 .LinkBox .col-md-12 {
     padding-bottom: 2rem;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .App {
+        padding: 0 1rem 1rem;
+        text-align: center;
+    }
+
+    .App-logo {
+        margin-top: -50px;
+    }
+
+    .App-header {
+        padding: 0 1rem;
+        text-align: left;
+    }
+
+    .App-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .App-header h1:after {
+        width: 46%;
+    }
+
+    .App-header p {
+        font-size: 1rem;
+    }
+
+    .container-fluid {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .bd .row {
+        padding: 0;
+    }
+
+    .bd .row .col-md-6+.col-md-6 {
+        padding-top: 1rem;
+    }
+
+    .LinkBox {
+        text-align: left;
+    }
+
+    .bd .row:nth-child(odd) {
+        background-image: linear-gradient(to bottom, white 0%, white 25%, #e0e0e0 25%, #e0e0e0 100%);
+    }
+
+    .bd .row:nth-child(even) {
+        background-image: linear-gradient(to bottom, #e0e0e0 0%, #e0e0e0 83%, white 83%, white 100%);
+    }
+
 }
