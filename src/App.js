@@ -3,9 +3,43 @@ import LinkBoxRow from './LinkBoxRow';
 import './styles/App.css';
 
 function App() {
-    let props = {
-        title: 'Title',
-        subTitle: 'Sub Title'
+    let pods = {
+        row1: {
+            pod1: {
+                title:      'Determine Your Career',
+                subTitle:   'Goals',
+                headline:   'H3 Headline 1',
+                text:       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                lineColor:  '#a3c642',
+                linkHref:   'http://www.google.com'
+            },
+            pod2: {
+                title:      'Research Education',
+                subTitle:   'Degrees',
+                headline:   'H3 Headline 2',
+                text:       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                lineColor:  'red',
+                linkHref:   'https://www.google.com/maps'
+            }
+        },
+        row2: {
+            pod1: {
+                title:      'Locate Schools in your',
+                subTitle:   'State',
+                headline:   'H3 Headline 3',
+                text:       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                lineColor:  'magenta',
+                linkHref:   'https://docs.google.com'
+            },
+            pod2: {
+                title:      'Explore Teacher',
+                subTitle:   'Resources',
+                headline:   'H3 Headline 4',
+                text:       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                lineColor:  'blue',
+                linkHref:   'https://mail.google.com'
+            }
+        }
     };
 
     return (
@@ -17,8 +51,8 @@ function App() {
           </header>
           <div className="container-fluid">
             <div className="bd">
-                <LinkBoxRow/>
-                <LinkBoxRow {...props}/>
+                <LinkBoxRow {...pods.row1}/>
+                <LinkBoxRow {...pods.row2}/>
             </div>
           </div>
         </div>
