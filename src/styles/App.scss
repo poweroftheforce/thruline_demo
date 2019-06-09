@@ -3,11 +3,13 @@
     padding: 0 5rem 3rem;
     width: 100%;
 
+    /* main Thruline logo */
     .logo {
         display: inline-block;
         margin-top: -50px;
     }
 
+    /* intro headline */
     .header {
         color: #5a5a5a;
         display: flex;
@@ -34,6 +36,7 @@
         }
     }
 
+    /* main content */
     .container-fluid {
         padding-left: 5rem;
         padding-right: 5rem;
@@ -42,6 +45,7 @@
             .row {
                 padding: 0 5rem;
 
+                /* link box pods */
                 .LinkBox {
                     background: white;
                     border: 2px solid #435165;
@@ -93,6 +97,7 @@
                 }
             }
 
+            /* background behind pods */
             .row:nth-child(odd) {
                 background-image: linear-gradient(to bottom, white 0%, white 50%, #e0e0e0 50%, #e0e0e0 100%);
             }
@@ -103,6 +108,7 @@
                 background-repeat: no-repeat;
             }
 
+            /* misc helper styles */
             .row + .row {
                 padding-top: 1rem;
             }
@@ -110,6 +116,7 @@
     }
 }
 
+/* mobile styles */
 @media only screen and (max-width: 600px) {
 
     .app {
@@ -150,6 +157,7 @@
                     padding-top: 1rem;
                 }
 
+                /* background behind pods */
                 .row:nth-child(odd) {
                     background-image: linear-gradient(to bottom, white 0%, white 25%, #e0e0e0 25%, #e0e0e0 100%);
                 }
