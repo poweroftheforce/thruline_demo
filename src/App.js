@@ -1,6 +1,6 @@
 import React from 'react';
 import LinkBoxRow from './LinkBoxRow';
-import './styles/App.css';
+import './styles/App.scss';
 
 function App() {
     let pods = {
