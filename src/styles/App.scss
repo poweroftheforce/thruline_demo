@@ -5,7 +5,7 @@
 
     .logo {
         display: inline-block;
-        margin-top: 0;
+        margin-top: -50px;
     }
 
     .header {
@@ -22,7 +22,7 @@
         h1:after {
             content: "";
             position: absolute;
-            width: 21%;
+            width: 24%;
             height: 3px;
             bottom: -.3rem;
             left: 0;
@@ -115,10 +115,6 @@
     .app {
         padding: 0 1rem 1rem;
         text-align: center;
-
-        .logo {
-            margin-top: -50px;
-        }
 
         .header {
             padding: 0 1rem;

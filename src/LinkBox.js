@@ -25,7 +25,7 @@ class LinkBox extends React.Component {
 				      <hr color={this.props.lineColor}/>
 				      <h3>{this.props.headline}</h3>
 				      <p>{this.props.text}</p>
-				      <a href={this.props.linkHref} target="_blank">{this.props.linkText}</a>
+				      <a href={this.props.linkHref} target="_blank" rel="noopener noreferrer">{this.props.linkText}</a>
 				    </div>
 			    </div>
 			</div>
