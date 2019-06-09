@@ -1,168 +1,134 @@
-.App {
-    font-family: 'Arimo', sans-serif;
-    padding: 0 5rem 3rem;
-    width: 100%;
+.app {
+  font-family: "Arimo", sans-serif;
+  padding: 0 5rem 3rem;
+  width: 100%;
 }
-
-.content {
-    text-align: left;
+.app .logo {
+  display: inline-block;
+  margin-top: 0;
 }
-
-.App-logo {
-    display: inline-block;
-    margin-top: 0;
+.app .header {
+  color: #5a5a5a;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  padding: 0 10rem;
 }
-
-.App-header {
-    color: #5a5a5a;
-    display: flex;
-    flex-direction: column;
-    font-size: calc(10px + 2vmin);
-    padding: 0 10rem;
+.app .header h1 {
+  position: relative;
 }
-
-.App-header h1 {
-    position: relative;
+.app .header h1:after {
+  content: "";
+  position: absolute;
+  width: 21%;
+  height: 3px;
+  bottom: -0.3rem;
+  left: 0;
+  border-bottom: 3px solid #a3c642;
 }
-
-.App-header h1:after {
-    content: "";
-    position: absolute;
-    width: 21%;
-    height: 3px;
-    bottom: -.3rem;
-    left: 0;
-    border-bottom: 3px solid #a3c642;
+.app .header p {
+  margin-top: 1rem;
 }
-
-.App-header p {
-    margin-top: 1rem;
+.app .container-fluid {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
-
-.container-fluid {
-    padding-left: 5rem;
-    padding-right: 5rem;
+.app .container-fluid .bd .row {
+  padding: 0 5rem;
 }
-
-.bd .row {
-    padding: 0 5rem;
+.app .container-fluid .bd .row .LinkBox {
+  background: white;
+  border: 2px solid #435165;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
 }
-
-.bd .row:nth-child(odd) {
-    background-image: linear-gradient(to bottom, white 0%, white 50%, #e0e0e0 50%, #e0e0e0 100%);
+.app .container-fluid .bd .row .LinkBox h2 {
+  background: #435165;
+  color: white;
+  font-size: 1.75rem;
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.bd .row:nth-child(even) {
-    background-image: linear-gradient(to bottom, #e0e0e0 0%, #e0e0e0 60%, white 60%, white 100%);
-    background-position: 0 -1rem;
-    background-repeat: no-repeat;
+.app .container-fluid .bd .row .LinkBox .sub-title {
+  color: #363636;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
-
-.bd .row+.row {
-    padding-top: 1rem;
+.app .container-fluid .bd .row .LinkBox hr {
+  height: 1px;
+  margin-top: 0;
 }
-
-.LinkBox {
-    background: white;
-    border: 2px solid #435165;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+.app .container-fluid .bd .row .LinkBox h3 {
+  font-size: 1.5rem;
 }
-
-.LinkBox h2 {
-    background: #435165;
-    color: white;
-    font-size: 1.75rem;
-    margin: 0;
-    padding: .5rem 0;
-    text-align: center;
-    text-transform: uppercase;
+.app .container-fluid .bd .row .LinkBox p:not(sub-title) {
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
 }
-
-.LinkBox .sub-title {
-    color: #363636;
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
+.app .container-fluid .bd .row .LinkBox a, .app .container-fluid .bd .row .LinkBox a:hover {
+  text-decoration: underline;
 }
-
-.LinkBox hr {
-    height: 1px;
-    margin-top: 0;
+.app .container-fluid .bd .row .LinkBox .col-md-12 {
+  padding-bottom: 2rem;
 }
-
-.LinkBox h3 {
-    font-size: 1.5rem;
+.app .container-fluid .bd .row:nth-child(odd) {
+  background-image: linear-gradient(to bottom, white 0%, white 50%, #e0e0e0 50%, #e0e0e0 100%);
 }
-
-.LinkBox p:not(sub-title) {
-    font-size: .75rem;
-    margin-bottom: .25rem;
+.app .container-fluid .bd .row:nth-child(even) {
+  background-image: linear-gradient(to bottom, #e0e0e0 0%, #e0e0e0 60%, white 60%, white 100%);
+  background-position: 0 -1rem;
+  background-repeat: no-repeat;
 }
-
-.LinkBox a, .LinkBox a:hover {
-    text-decoration: underline;
+.app .container-fluid .bd .row + .row {
+  padding-top: 1rem;
 }
-
-.LinkBox .col-md-12 {
-    padding-bottom: 2rem;
-}
-
 
 @media only screen and (max-width: 600px) {
-
-    .App {
-        padding: 0 1rem 1rem;
-        text-align: center;
-    }
-
-    .App-logo {
-        margin-top: -50px;
-    }
-
-    .App-header {
-        padding: 0 1rem;
-        text-align: left;
-    }
-
-    .App-header h1 {
-        font-size: 1.75rem;
-    }
-
-    .App-header h1:after {
-        width: 46%;
-    }
-
-    .App-header p {
-        font-size: 1rem;
-    }
-
-    .container-fluid {
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    .bd .row {
-        padding: 0;
-    }
-
-    .bd .row .col-md-6+.col-md-6 {
-        padding-top: 1rem;
-    }
-
-    .LinkBox {
-        text-align: left;
-    }
-
-    .bd .row:nth-child(odd) {
-        background-image: linear-gradient(to bottom, white 0%, white 25%, #e0e0e0 25%, #e0e0e0 100%);
-    }
-
-    .bd .row:nth-child(even) {
-        background-image: linear-gradient(to bottom, #e0e0e0 0%, #e0e0e0 83%, white 83%, white 100%);
-    }
-
+  .app {
+    padding: 0 1rem 1rem;
+    text-align: center;
+  }
+  .app .logo {
+    margin-top: -50px;
+  }
+  .app .header {
+    padding: 0 1rem;
+    text-align: left;
+  }
+  .app .header h1 {
+    font-size: 1.75rem;
+  }
+  .app .header h1:after {
+    width: 46%;
+  }
+  .app .header p {
+    font-size: 1rem;
+  }
+  .app .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .app .container-fluid .bd .row {
+    padding: 0;
+  }
+  .app .container-fluid .bd .row .LinkBox {
+    text-align: left;
+  }
+  .app .container-fluid .bd .row .col-md-6 + .col-md-6 {
+    padding-top: 1rem;
+  }
+  .app .container-fluid .bd .row:nth-child(odd) {
+    background-image: linear-gradient(to bottom, white 0%, white 25%, #e0e0e0 25%, #e0e0e0 100%);
+  }
+  .app .container-fluid .bd .row:nth-child(even) {
+    background-image: linear-gradient(to bottom, #e0e0e0 0%, #e0e0e0 83%, white 83%, white 100%);
+  }
 }
+
+/*# sourceMappingURL=App.css.map */
