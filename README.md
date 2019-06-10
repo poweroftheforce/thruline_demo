@@ -16,6 +16,8 @@ use: [https://github.com/poweroftheforce/thruline_demo.git](https://github.com/p
 
 $ npm install
 
+### Notes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
