@@ -12,7 +12,7 @@
     }
 
     /* intro headline */
-    .header {
+    header {
         color: $header-color;
         display: flex;
         flex-direction: column;
@@ -20,13 +20,14 @@
         padding: 0 10rem;
 
         h1 {
+            font-size: 128%;
             position: relative;
         }
 
         h1:after {
             content: "";
             position: absolute;
-            width: 24%;
+            width: 13%;
             height: 3px;
             bottom: -.3rem;
             left: 0;
@@ -34,6 +35,7 @@
         }
 
         p {
+            font-size: 70%;
             margin-top: 1rem;
         }
     }
@@ -58,7 +60,7 @@
                     h2 {
                         background: $pod-title-bg-color;
                         color: $pod-title-color;
-                        font-size: 130%;
+                        font-size: 128%;
                         margin: 0;
                         padding: .5rem 0;
                         text-align: center;
@@ -69,6 +71,7 @@
                         color: $pod-sub-title-color;
                         font-size: 182%;
                         font-weight: 600;
+                        line-height: 3rem;
                         margin: 0;
                         text-align: center;
                         text-transform: uppercase;
@@ -80,15 +83,18 @@
                     }
 
                     h3 {
-                        font-size: 1.5rem;
+                        font-size: 94%;
+                        font-weight: 600;
                     }
 
-                    p:not(sub-title) {
-                        font-size: .75rem;
+                    p:not(.sub-title) {
+                        font-size: 76%;
+                        line-height: 1.2rem;
                         margin-bottom: .25rem;
                     }
 
                     a, a:hover, a:active, a:visited {
+                        font-size: 88%;
                         text-decoration: underline;
                     }
 
@@ -123,12 +129,12 @@
     .app {
         padding: 0 2rem 3rem;
 
-        .header {
+        header {
             font-size: calc(10px + 1.5vmin);
             padding: 0 5rem;
 
             h1:after {
-                width: 26%;
+                width: 20%;
             }
         }
 
@@ -151,20 +157,21 @@
         padding: 0 1rem 1rem;
         text-align: center;
 
-        .header {
+        header {
             padding: 0 1rem;
             text-align: left;
 
             h1 {
-                font-size: 1.75rem;
+                font-size: 124%;
             }
 
             h1:after {
-                width: calc(100% / 2.1);
+                width: calc(100% * .3);
             }
 
             p {
-                font-size: 1rem;
+                font-size: 86%;
+                padding-right: 3%;
             }
         }
 
