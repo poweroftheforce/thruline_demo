@@ -44,6 +44,7 @@ const pods = {
 export default class App extends React.Component<{ pods: object }> {
     public render () {
         const { row1, row2 } = pods;
+
         return (
             <div className="app">
                 <a className="logo" href="https://www.thru-line.com/" target="_blank" rel="noopener noreferrer">

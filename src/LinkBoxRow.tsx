@@ -11,13 +11,12 @@ export interface Props {
 export default class LinkBoxRow extends React.Component<any, Props> {
 	public render () {
 		const { ...pod } = this.props.row;
-		console.log(pod);
+
 		return (
 			<div className="row">
 				<LinkBox {...pod.pod1}/>
 				<LinkBox {...pod.pod2}/>
 			</div>
 		);
-		// return (<div/>);
 	}
 }
