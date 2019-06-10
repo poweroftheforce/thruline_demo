@@ -58,7 +58,7 @@
                     h2 {
                         background: $pod-title-bg-color;
                         color: $pod-title-color;
-                        font-size: 1.75rem;
+                        font-size: 130%;
                         margin: 0;
                         padding: .5rem 0;
                         text-align: center;
@@ -67,7 +67,7 @@
 
                     .sub-title {
                         color: $pod-sub-title-color;
-                        font-size: 2.5rem;
+                        font-size: 182%;
                         font-weight: 600;
                         margin: 0;
                         text-align: center;
@@ -88,7 +88,7 @@
                         margin-bottom: .25rem;
                     }
 
-                    a, a:hover {
+                    a, a:hover, a:active, a:visited {
                         text-decoration: underline;
                     }
 
@@ -118,9 +118,35 @@
     }
 }
 
+/* tablet styles */
+@media only screen and (max-width :1024px)  {
+    .app {
+        padding: 0 2rem 3rem;
+
+        .header {
+            font-size: calc(10px + 1.5vmin);
+            padding: 0 5rem;
+
+            h1:after {
+                width: 26%;
+            }
+        }
+
+        .container-fluid {
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .bd {
+                .row {
+                    padding: 0 2rem;
+                }
+            }
+        }
+    }
+}
+
 /* mobile styles */
 @media only screen and (max-width: 600px) {
-
     .app {
         padding: 0 1rem 1rem;
         text-align: center;
@@ -134,7 +160,7 @@
             }
 
             h1:after {
-                width: 46%;
+                width: calc(100% / 2.1);
             }
 
             p {
